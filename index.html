@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquímetro POO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Divisor para estilização no css-->
+    <div class="container">
+        <h1>Parquímetro</h1>
+        <p>Insira o valor para calcular seu tempo de permanência:</p>
+    
+        <div class="input">
+            <!--Onde o usuário colocará o valor-->
+            <input type="number" id="valorInput" placeholder="Ex: 1.00">
+        </div>
+
+        <!--Botão calculador de tmepo-->
+        <button onclick="calcularTempo()">Calcular Tempo</button>
+
+        <!--Apresentação da mensagem-->
+        <p id="mensagem" class="resultado"></p>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
