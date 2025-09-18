@@ -1,0 +1,102 @@
+/*Seletor e Variáveis CSS (cores principais)*/
+:root {
+    --primary-color: #C0B9DD;
+    --secondary-color: #75C9C8;
+    --background-light: #F7F4EA;
+    --card-background: #FFFFFF;
+    --text-dark: #80A1D4;
+    --text-light: #ECF0F1;
+}
+
+/*CSS Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; /*padding = espaço interno*/
+}
+
+body {
+    font-family: 'Inter', sans-serif; /*definindo a fonte*/
+    background-color: var(--background-light);
+    display: flex; /*contêiner flexível*/
+    justify-content: center; /*alinha os itens ao centro*/
+    align-items: center; /*alinha os itens no eixo transversal*/
+    min-height: 100vh; /*altura mínima do elemento*/
+    color: var(--text-dark);
+    text-align: center;
+    padding: 1rem;
+}
+
+/*Estilos para o contêiner principal*/
+.container {
+    background-color: var(--card-background);
+    border-radius: 16px; /*arredonda os cantos das bordas */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /*adiciona uma sombra ao redor do elemento*/
+    padding: 3rem;
+    max-width: 450px; /*define a largura máxima do elemento*/
+    width: 100%; /*largura do container*/
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem; /*espaçamento externo na parte de baixo*/
+    font-weight: 700; /*peso ou espessura da fonte*/
+}
+
+p {
+    margin-bottom: 1rem; /*espaçamento externo na parte de baixo*/
+    line-height: 1.5; /*altura das linhas do texto*/
+}
+
+/*Estilos para o input*/
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #DCDFE6;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    transition: border-color 0.3s ease; /*pequena animação*/
+}
+
+input[type="number"]:focus {
+    outline: none; /*linha de destaque ou contorno*/
+    border-color: var(--primary-color); /*muda a cor da borda do elemento*/
+}
+
+/*Estilos para o botão*/
+button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; /*muda o formato do cursor do mouse quando ele passa pelo botão*/
+    transition: background-color 0.3s ease, transform 0.2s ease; /*pequena animação que muda a cor do fundo em 3s e tranforma em 2s*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: var(--text-dark);
+    transform: translateY(-2px); /*transformação, move o elemento pra cima (vertical)*/
+}
+
+button:active {
+    background-color: #4b75b4;
+    transform: translateY(0); /*propriedade que realiza a transformação*/
+}
+
+/*Estilos para a mensagem de resultado*/
+.resultado {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    min-height: 2rem; /*garante que o espaço não mude de tamanho*/
+}
+
+/*largura (width) e altura (height)*/
